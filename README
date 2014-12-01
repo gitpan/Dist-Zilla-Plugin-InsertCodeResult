@@ -1,0 +1,55 @@
+NAME
+    Dist::Zilla::Plugin::InsertCodeResult - Insert the result of Perl code
+    into your POD
+
+VERSION
+    This document describes version 0.01 of
+    Dist::Zilla::Plugin::InsertCodeResult (from Perl distribution
+    Dist-Zilla-Plugin-InsertCodeResult), released on 2014-12-01.
+
+SYNOPSIS
+    In dist.ini:
+
+     [InsertCodeResult]
+
+    In your POD:
+
+     # CODE:
+
+DESCRIPTION
+    This module finds "# CODE: ..." directives in your POD, evals the
+    specified Perl code, and insert the result into your POD as a verbatim
+    paragraph. If result is a simple scalar, it is printed as is. If it is
+    undef or a reference, it will be dumped using Data::Dump. If eval fails,
+    a message like this will be inserted instead:
+
+     # eval failed: syntax error at -e line 1, near ""x;" say"
+
+SEE ALSO
+    Dist::Zilla::Plugin::InsertExample
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Dist-Zilla-Plugin-InsertCodeResult>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/perlancar/perl-Dist-Zilla-Plugin-InsertCodeResult>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-Ins
+    ertCodeResult>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    perlancar <perlancar@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by perlancar@cpan.org.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
