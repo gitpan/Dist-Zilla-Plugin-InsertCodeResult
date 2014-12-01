@@ -1,7 +1,7 @@
 package Dist::Zilla::Plugin::InsertCodeResult;
 
 our $DATE = '2014-12-01'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use strict;
@@ -70,7 +70,7 @@ Dist::Zilla::Plugin::InsertCodeResult - Insert the result of Perl code into your
 
 =head1 VERSION
 
-This document describes version 0.01 of Dist::Zilla::Plugin::InsertCodeResult (from Perl distribution Dist-Zilla-Plugin-InsertCodeResult), released on 2014-12-01.
+This document describes version 0.02 of Dist::Zilla::Plugin::InsertCodeResult (from Perl distribution Dist-Zilla-Plugin-InsertCodeResult), released on 2014-12-01.
 
 =head1 SYNOPSIS
 
@@ -87,9 +87,7 @@ In your POD:
 This module finds C<# CODE: ...> directives in your POD, evals the specified
 Perl code, and insert the result into your POD as a verbatim paragraph. If
 result is a simple scalar, it is printed as is. If it is undef or a reference,
-it will be dumped using L<Data::Dump>. If eval fails, a message like this will be inserted instead:
-
- # eval failed: syntax error at -e line 1, near ""x;" say"
+it will be dumped using L<Data::Dump>. If eval fails, build will be aborted.
 
 =for Pod::Coverage .+
 

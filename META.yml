@@ -24,7 +24,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-InsertCodeResult
   homepage: https://metacpan.org/release/Dist-Zilla-Plugin-InsertCodeResult
   repository: git://github.com/perlancar/perl-Dist-Zilla-Plugin-InsertCodeResult.git
-version: '0.01'
+version: '0.02'
 x_Dist_Zilla:
   perl:
     version: '5.018001'

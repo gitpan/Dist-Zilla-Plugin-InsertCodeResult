@@ -3,7 +3,7 @@ NAME
     into your POD
 
 VERSION
-    This document describes version 0.01 of
+    This document describes version 0.02 of
     Dist::Zilla::Plugin::InsertCodeResult (from Perl distribution
     Dist-Zilla-Plugin-InsertCodeResult), released on 2014-12-01.
 
@@ -21,9 +21,7 @@ DESCRIPTION
     specified Perl code, and insert the result into your POD as a verbatim
     paragraph. If result is a simple scalar, it is printed as is. If it is
     undef or a reference, it will be dumped using Data::Dump. If eval fails,
-    a message like this will be inserted instead:
-
-     # eval failed: syntax error at -e line 1, near ""x;" say"
+    build will be aborted.
 
 SEE ALSO
     Dist::Zilla::Plugin::InsertExample
