@@ -3,7 +3,7 @@ NAME
     into your POD
 
 VERSION
-    This document describes version 0.02 of
+    This document describes version 0.03 of
     Dist::Zilla::Plugin::InsertCodeResult (from Perl distribution
     Dist-Zilla-Plugin-InsertCodeResult), released on 2014-12-01.
 
@@ -14,7 +14,7 @@ SYNOPSIS
 
     In your POD:
 
-     # CODE:
+     # CODE: require MyLib; MyLib::gen_stuff("some", "param");
 
 DESCRIPTION
     This module finds "# CODE: ..." directives in your POD, evals the
